@@ -16,7 +16,7 @@
 
 .nav a {
   color: #202335;
-  font-family: 'Archivo Narrow';
+  font-family: "Archivo Narrow";
   font-size: 23px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .ttl-head a {
-  font-family: 'Archivo Black' !important; 
+  font-family: "Archivo Black" !important;
 }
 
 .menu {
@@ -63,6 +63,44 @@
 
 .sub-nav a {
   color: white;
+}
+
+.marquee-bar {
+  background-color: white;
+  color: #8228b2;
+  padding: 12px 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  z-index: 1;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+body {
+  margin: 0;
+  padding-top: 0;
+  font-family: sans-serif;
 }
 
 /* Kalender Akademik */
@@ -101,4 +139,25 @@
 
 .tab-content.active {
   display: block;
+}
+
+/* Container untuk konten e-learning */
+.elearning-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Responsive padding */
+@media (max-width: 768px) {
+  .elearning-container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .elearning-container {
+    padding: 0 10px;
+  }
 }
