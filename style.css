@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: #bd48f6;
+  height: 7rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  color: #202335;
+  font-family: 'Archivo Narrow';
+  font-size: 23px;
+}
+
+.logo {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+}
+
+.gambar img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.title-logo {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ttl-head a {
+  font-family: 'Archivo Black' !important; 
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+.sub-nav {
+  background-color: #8228b2;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 200px;
+}
+
+.sub-nav a {
+  color: white;
+}
+
+/* Kalender Akademik */
+.tab-container {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.tab-header {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 1rem;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.tab-btn.active {
+  background-color: #bd48f6;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.tab-content.active {
+  display: block;
+}
