@@ -238,6 +238,77 @@ body {
   margin: 0.5rem 1rem;
 }
 
+/* Login Box */
+.login-container {
+  background-color: #f0f0f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  border-top: 5px solid #a262e0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline-color: #a262e0;
+  margin-top: 0.3rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  background-color: #a262e0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #914dd4;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #a262e0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
 /* Responsive padding */
 @media (max-width: 768px) {
   .elearning-container {

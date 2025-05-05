@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login E-learning</title>
+    <link rel="stylesheet" href="css & js/style.css" />
   </head>
   <body>
-    <h1>Login</h1>
-    <form onsubmit="return loginUser()">
-      <label>Username: <input type="text" id="username" /></label><br />
-      <label>Password: <input type="password" id="password" /></label><br />
-      <button type="submit">Login</button>
-    </form>
+    <div class="login-container">
+      <div class="login-box">
+        <h1>Login</h1>
+        <form onsubmit="return loginUser()">
+          <label>Username: <input type="text" id="username" /></label><br />
+          <label>Password: <input type="password" id="password" /></label><br />
+          <button type="submit">Login</button>
+          <a href="home.html" class="back-link">← Back to Home</a>
+        </form>
+      </div>
+    </div>
 
     <script src="css & js/script.js"></script>
   </body>
