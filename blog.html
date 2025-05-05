@@ -178,72 +178,7 @@
         </div>
       </div>
 
-      <div class="share-form">
-        <h2>Bagikan Pengetahuan atau Pengalaman Anda</h2>
-        <form id="blogForm">
-          <div class="form-group">
-            <label for="name">Nama Lengkap</label>
-            <input type="text" id="name" required />
-          </div>
 
-          <div class="form-group">
-            <label for="role">Peran</label>
-            <select id="role" required>
-              <option value="">Pilih Peran</option>
-              <option value="guru">Guru</option>
-              <option value="siswa">Siswa</option>
-              <option value="staf">Staf</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="title">Judul Artikel</label>
-            <input type="text" id="title" required />
-          </div>
-
-          <div class="form-group">
-            <label for="category">Kategori</label>
-            <select id="category" required>
-              <option value="">Pilih Kategori</option>
-              <option value="akademik">Akademik</option>
-              <option value="ekstrakurikuler">Ekstrakurikuler</option>
-              <option value="teknologi">Teknologi</option>
-              <option value="seni">Seni & Budaya</option>
-              <option value="pengembangan">Pengembangan Diri</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="content">Isi Artikel</label>
-            <textarea id="content" required></textarea>
-          </div>
-
-          <button type="submit" class="btn">Kirim Artikel</button>
-        </form>
-      </div>
-    </div>
-
-    <script>
-      // Script sederhana untuk menangani pengiriman form
-      document
-        .getElementById("blogForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          // Ambil nilai dari form
-          const name = document.getElementById("name").value;
-          const role = document.getElementById("role").value;
-          const title = document.getElementById("title").value;
-
-          // Tampilkan pesan konfirmasi
-          alert(
-            `Terima kasih ${name}! Artikel Anda "${title}" telah berhasil dikirim dan akan ditinjau sebelum dipublikasikan.`
-          );
-
-          // Reset form
-          this.reset();
-        });
-    </script>
     <script src="css & js/script.js"></script>
   </body>
 </html>

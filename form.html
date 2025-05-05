@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMK Timorand</title>
+    <link rel="stylesheet" href="css & js/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <div class="gambar">
+          <a href="#">
+            <img
+              src="https://pbs.twimg.com/media/F-j9h-saUAABiEE.jpg:large"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <div class="title-logo">
+          <div class="ttl-head">
+            <a href="#">SMK TIMORAND</a>
+          </div>
+          <a href="#">JAKARTA TIMUR</a>
+        </div>
+      </div>
+      <div class="menu">
+        <a href="#">Beranda</a>
+        <a href="tester.html">Profil</a>
+        <a href="berita.html">Berita</a>
+        <a href="galeri.html">Galeri</a>
+      </div>
+    </div>
+    <div class="sub-nav">
+      <a href="elearning.html" onclick="goToElearning()">E-learning</a>
+      <a href="kalender.html">Kalender Akademik</a>
+      <a href="form.html">Formulir Pendaftaran</a>
+      <a href="blog.html">Blog</a>
+    </div>
+    <div class="container">
+      <div class="banner"></div>
+    </div>
+    <div class="share-form">
+      <h2>Formulir Pendaftaran Siswa Baru</h2>
+      <p class="form-description">Tahun Ajaran 2024/2025</p>
+      <form id="registrationForm">
+        <div class="form-section">
+          <h3>Data Pribadi</h3>
+          <div class="form-group">
+            <label for="fullName">Nama Lengkap</label>
+            <input type="text" id="fullName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="birthPlace">Tempat Lahir</label>
+            <input type="text" id="birthPlace" required />
+          </div>
+
+          <div class="form-group">
+            <label for="birthDate">Tanggal Lahir</label>
+            <input type="date" id="birthDate" required />
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender" required>
+              <option value="">Pilih Jenis Kelamin</option>
+              <option value="male">Laki-laki</option>
+              <option value="female">Perempuan</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="religion">Agama</label>
+            <select id="religion" required>
+              <option value="">Pilih Agama</option>
+              <option value="islam">Islam</option>
+              <option value="kristen">Kristen</option>
+              <option value="katolik">Katolik</option>
+              <option value="hindu">Hindu</option>
+              <option value="buddha">Buddha</option>
+              <option value="konghucu">Konghucu</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>Data Alamat</h3>
+          <div class="form-group">
+            <label for="address">Alamat Lengkap</label>
+            <textarea id="address" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="rt">RT</label>
+            <input type="text" id="rt" required />
+          </div>
+
+          <div class="form-group">
+            <label for="rw">RW</label>
+            <input type="text" id="rw" required />
+          </div>
+
+          <div class="form-group">
+            <label for="kelurahan">Kelurahan</label>
+            <input type="text" id="kelurahan" required />
+          </div>
+
+          <div class="form-group">
+            <label for="kecamatan">Kecamatan</label>
+            <input type="text" id="kecamatan" required />
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>Data Orang Tua/Wali</h3>
+          <div class="form-group">
+            <label for="parentName">Nama Orang Tua/Wali</label>
+            <input type="text" id="parentName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="parentPhone">Nomor Telepon Orang Tua/Wali</label>
+            <input type="tel" id="parentPhone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="parentOccupation">Pekerjaan Orang Tua/Wali</label>
+            <input type="text" id="parentOccupation" required />
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>Data Akademik</h3>
+          <div class="form-group">
+            <label for="previousSchool">Asal Sekolah</label>
+            <input type="text" id="previousSchool" required />
+          </div>
+
+          <div class="form-group">
+            <label for="major">Pilihan Jurusan</label>
+            <select id="major" required>
+              <option value="">Pilih Jurusan</option>
+              <option value="rpl">Rekayasa Perangkat Lunak</option>
+              <option value="tkj">Teknik Komputer dan Jaringan</option>
+              <option value="mm">Multimedia</option>
+              <option value="akuntansi">Akuntansi</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>Dokumen Pendukung</h3>
+          <div class="form-group">
+            <label for="photo">Pas Foto (3x4)</label>
+            <input type="file" id="photo" accept="image/*" required />
+          </div>
+
+          <div class="form-group">
+            <label for="ijazah">Ijazah/SKL</label>
+            <input
+              type="file"
+              id="ijazah"
+              accept=".pdf,.jpg,.jpeg,.png"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="kk">Kartu Keluarga</label>
+            <input type="file" id="kk" accept=".pdf,.jpg,.jpeg,.png" required />
+          </div>
+        </div>
+
+        <div class="form-group terms">
+          <input type="checkbox" id="terms" required />
+          <label for="terms"
+            >Saya menyatakan bahwa data yang diisi adalah benar dan dapat
+            dipertanggungjawabkan</label
+          >
+        </div>
+
+        <button type="submit" class="btn">Daftar Sekarang</button>
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const fullName = document.getElementById("fullName").value;
+          const major = document.getElementById("major").value;
+          const majorText =
+            document.getElementById("major").options[
+              document.getElementById("major").selectedIndex
+            ].text;
+
+          // Membuat elemen alert
+          const alertDiv = document.createElement("div");
+          alertDiv.className = "custom-alert";
+          alertDiv.innerHTML = `
+          <div class="alert-content">
+            <div class="alert-icon">✓</div>
+            <h3>Pendaftaran Berhasil!</h3>
+            <p>Terima kasih ${fullName}!</p>
+            <p>Pendaftaran Anda untuk jurusan ${majorText} telah berhasil disimpan.</p>
+            <p>Silahkan cek email Anda untuk informasi selanjutnya.</p>
+            <button class="alert-btn" onclick="this.parentElement.parentElement.remove()">OK</button>
+          </div>
+        `;
+
+          // Menambahkan alert ke body
+          document.body.appendChild(alertDiv);
+
+          // Reset form
+          this.reset();
+        });
+    </script>
+    <script src="css & js/script.js"></script>
+  </body>
+</html>
