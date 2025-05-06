@@ -109,6 +109,34 @@ body {
   padding: 20px;
 }
 
+/* Slider */
+.slider {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+}
+
+.horizontal-scroll {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+.item {
+  height: 530px;
+  overflow: hidden;
+  flex: 0 0 auto; /* menjaga lebar item tetap sesuai isi */
+}
+
+.item img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
 /* Kalender Akademik */
 .featured-posts {
   margin-bottom: 40px;
