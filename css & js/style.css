@@ -10,7 +10,7 @@
 }
 
 .nav {
-  background-color: #bd48f6;
+  background-color: #98fb98;
   height: 7rem;
   width: 100%;
   padding: 1rem 2rem;
@@ -57,7 +57,7 @@
 }
 
 .sub-nav {
-  background-color: #8228b2;
+  background-color: #065f46;
   height: 2.5rem;
   display: flex;
   align-items: center;
@@ -71,7 +71,7 @@
 
 .marquee-bar {
   background-color: white;
-  color: #8228b2;
+  color: #065f46;
   padding: 8px 0;
   overflow: hidden;
   position: relative;
@@ -180,12 +180,12 @@ body {
 }
 
 .featured-posts h2 {
-  color: #8228b2;
+  color: #065f46;
   font-family: "Archivo Black", sans-serif;
   font-size: 2em;
   margin-bottom: 30px;
   padding-bottom: 10px;
-  border-bottom: 3px solid #bd48f6;
+  border-bottom: 3px solid #98fb98;
 }
 
 .tab-container {
@@ -210,7 +210,7 @@ body {
 }
 
 .tab-btn.active {
-  background-color: #bd48f6;
+  background-color: #98fb98;
   color: white;
 }
 
@@ -317,7 +317,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 350px;
-  border-top: 5px solid #a262e0;
+  border-top: 5px solid #065f46;
 }
 
 h1 {
@@ -338,7 +338,7 @@ input[type="password"] {
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  outline-color: #a262e0;
+  outline-color: #065f46;
   margin-top: 0.3rem;
 }
 
@@ -346,7 +346,7 @@ button {
   width: 100%;
   padding: 0.6rem;
   margin-top: 1rem;
-  background-color: #a262e0;
+  background-color: #065f46;
   color: white;
   border: none;
   border-radius: 6px;
@@ -362,7 +362,7 @@ button:hover {
   display: block;
   text-align: center;
   margin-top: 1rem;
-  color: #a262e0;
+  color: #065f46;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: bold;
@@ -475,11 +475,11 @@ button:hover {
   left: 0;
   right: 0;
   height: 5px;
-  background: linear-gradient(to right, #8228b2, #bd48f6);
+  background: linear-gradient(to right, #065f46, #98fb98);
 }
 
 .share-form h2 {
-  color: #8228b2;
+  color: #065f46;
   font-family: "Archivo Black", sans-serif;
   text-align: center;
   font-size: 2.2em;
@@ -511,11 +511,11 @@ button:hover {
 }
 
 .form-section h3 {
-  color: #8228b2;
+  color: #065f46;
   font-family: "Archivo Black", sans-serif;
   margin-bottom: 25px;
   padding-bottom: 15px;
-  border-bottom: 2px solid #bd48f6;
+  border-bottom: 2px solid #98fb98;
   font-size: 1.4em;
   display: flex;
   align-items: center;
@@ -526,7 +526,7 @@ button:hover {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: #bd48f6;
+  background: #98fb98;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -559,7 +559,7 @@ button:hover {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #bd48f6;
+  border-color: #98fb98;
   box-shadow: 0 0 0 3px rgba(189, 72, 246, 0.1);
 }
 
@@ -581,7 +581,7 @@ button:hover {
 .form-group.terms input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  accent-color: #8228b2;
+  accent-color: #065f46;
 }
 
 .form-group.terms label {
@@ -591,7 +591,7 @@ button:hover {
 }
 
 .btn {
-  background: linear-gradient(to right, #8228b2, #bd48f6);
+  background: linear-gradient(to right, #065f46, #98fb98);
   color: white;
   padding: 18px 35px;
   border: none;
@@ -622,7 +622,7 @@ input[type="file"] {
 }
 
 input[type="file"]:hover {
-  border-color: #bd48f6;
+  border-color: #98fb98;
   background: #f0f0f0;
 }
 
@@ -694,7 +694,7 @@ footer {
 .alert-icon {
   width: 60px;
   height: 60px;
-  background: #8228b2;
+  background: #065f46;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -705,7 +705,7 @@ footer {
 }
 
 .alert-content h3 {
-  color: #8228b2;
+  color: #065f46;
   font-family: "Archivo Black", sans-serif;
   margin-bottom: 15px;
   font-size: 1.5em;
@@ -718,7 +718,7 @@ footer {
 }
 
 .alert-btn {
-  background: linear-gradient(to right, #8228b2, #bd48f6);
+  background: linear-gradient(to right, #065f46, #98fb98);
   color: white;
   border: none;
   padding: 12px 30px;
