@@ -41,7 +41,6 @@ nav a:hover {
   padding: 20px;
 }
 
-/* Featured Posts */
 .featured-posts {
   margin-bottom: 40px;
 }
@@ -144,14 +143,12 @@ nav a:hover {
   box-shadow: 0 5px 15px rgba(189, 72, 246, 0.3);
 }
 
-/* Main Content Layout */
 .main-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 30px;
 }
 
-/* Sidebar */
 .sidebar {
   background: white;
   border-radius: 15px;
@@ -188,7 +185,6 @@ nav a:hover {
   color: #98fb98;
 }
 
-/* Search Box */
 .search {
   margin-bottom: 30px;
 }
