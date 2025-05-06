@@ -751,3 +751,199 @@ footer {
     font-size: 1.3em;
   }
 }
+
+/* PROFIL SEKOLAH STYLE */
+.profil-sekolah {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+.profil-sekolah::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(to right, #8228b2, #bd48f6);
+}
+
+.profil-sekolah h2 {
+  color: #8228b2;
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.profil-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.profil-img {
+  flex: 0 0 auto;
+}
+
+.profil-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 3px solid #bd48f6;
+  background: #f8f8fa;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.profil-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(130, 40, 178, 0.2);
+}
+
+.profil-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.profil-info p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.5;
+}
+
+.profil-info strong {
+  font-weight: 600;
+  color: #8228b2;
+}
+
+.profil-info a {
+  color: #bd48f6;
+  transition: color 0.3s;
+}
+
+.profil-info a:hover {
+  color: #8228b2;
+  text-decoration: underline;
+}
+
+.profil-desc {
+  margin-top: 20px;
+}
+
+.profil-desc h3 {
+  color: #8228b2;
+  font-family: "Archivo Black", sans-serif;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #bd48f6;
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+}
+
+.profil-desc h3::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #bd48f6;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profil-desc p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #444;
+  font-size: 1.05em;
+}
+
+.profil-desc ul {
+  margin: 0 0 20px 25px;
+  padding: 0;
+}
+
+.profil-desc li {
+  margin-bottom: 8px;
+  color: #444;
+  position: relative;
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.profil-desc li::before {
+  content: "•";
+  color: #bd48f6;
+  font-weight: bold;
+  font-size: 1.2em;
+  position: absolute;
+  left: -15px;
+}
+
+@media (max-width: 768px) {
+  .profil-sekolah {
+    padding: 25px 20px;
+  }
+
+  .profil-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .profil-img img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profil-sekolah h2 {
+    font-size: 1.8em;
+  }
+
+  .profil-desc h3 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .profil-sekolah {
+    padding: 20px 15px;
+    margin: 20px 10px;
+  }
+
+  .profil-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profil-sekolah h2 {
+    font-size: 1.5em;
+  }
+
+  .profil-info p {
+    font-size: 1em;
+  }
+
+  .profil-desc h3 {
+    font-size: 1.2em;
+  }
+
+  .profil-desc p,
+  .profil-desc li {
+    font-size: 0.95em;
+  }
+}
