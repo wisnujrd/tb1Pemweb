@@ -176,12 +176,52 @@ body {
 }
 
 /* Sambutan Kepsek */
+.welcome-kepsek {
+  background: url(https://smkn5tangerangkota.sch.id/uploads/news/WhatsApp_Image_2024-05-16_at_13.56.53_4Telb70KeG.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.welcome-kepsek::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .welcome-box {
+  padding: 9rem 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.box-title {
+  margin: 0 2rem 1rem;
+  color: white;
+  border-bottom: 3px solid #fff;
+  width: fit-content;
+}
+
+.box-content {
   display: flex;
+}
+
+.box-img {
+  padding: 0 2rem;
+  color: white;
 }
 
 .box-img img {
   width: 190px;
+}
+
+.box-text {
+  color: white;
+  font-size: 25px;
 }
 
 .featured-posts {
@@ -195,6 +235,147 @@ body {
   margin-bottom: 30px;
   padding-bottom: 10px;
   border-bottom: 3px solid #98fb98;
+}
+
+/* PROFIL SEKOLAH STYLE */
+.profil-sekolah {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+.profil-sekolah::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(to right, #065f46, #98fb98);
+}
+
+.profil-sekolah h2 {
+  color: #065f46;
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.profil-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.profil-img {
+  flex: 0 0 auto;
+}
+
+.profil-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 3px solid #98fb98;
+  background: #f8f8fa;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.profil-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(130, 40, 178, 0.2);
+}
+
+.profil-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.profil-info p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.5;
+}
+
+.profil-info strong {
+  font-weight: 600;
+  color: #065f46;
+}
+
+.profil-info a {
+  color: #98fb98;
+  transition: color 0.3s;
+}
+
+.profil-info a:hover {
+  color: #065f46;
+  text-decoration: underline;
+}
+
+.profil-desc {
+  margin-top: 20px;
+}
+
+.profil-desc h3 {
+  color: #065f46;
+  font-family: "Archivo Black", sans-serif;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #98fb98;
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+}
+
+.profil-desc h3::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #98fb98;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profil-desc p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #444;
+  font-size: 1.05em;
+}
+
+.profil-desc ul {
+  margin: 0 0 20px 25px;
+  padding: 0;
+}
+
+.profil-desc li {
+  margin-bottom: 8px;
+  color: #444;
+  position: relative;
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.profil-desc li::before {
+  content: "•";
+  color: #98fb98;
+  font-weight: bold;
+  font-size: 1.2em;
+  position: absolute;
+  left: -15px;
 }
 
 /* Kalender Akademik */
@@ -760,4 +941,30 @@ footer {
   .alert-content h3 {
     font-size: 1.3em;
   }
+}
+
+/* Footer */
+.school-footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+  position: relative;
+}
+
+.school-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #f59e0b, #ef4444);
+}
+
+.footer-content {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 14px;
 }
