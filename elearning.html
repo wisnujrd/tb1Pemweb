@@ -69,8 +69,8 @@
         window.location.href = "login.html";
       } else {
         const username = sessionStorage.getItem("username");
-        document.getElementById("welcome").textContent =
-          "Halo, " + username + "!";
+        document.getElementById("welcome").innerHTML =
+          '<i class="fa-solid fa-user"></i> Halo, ' + username + "!";
       }
     </script>
   </body>
