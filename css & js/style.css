@@ -1049,3 +1049,85 @@ footer {
 .footer-bottom p {
   font-size: 0.9rem;
 }
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+  padding: 7rem 3rem 4rem;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.stat-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 20px;
+  position: relative;
+}
+
+.stat-info {
+  z-index: 1;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.percent {
+  font-size: 24px;
+}
+
+.stat-label {
+  font-size: 16px;
+  margin: 0;
+}
+
+.stat-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.2;
+  font-size: 80px;
+}
+
+/* Warna kartu */
+.teal {
+  background-color: #17a2b8;
+}
+
+.green {
+  background-color: #28a745;
+}
+
+.yellow {
+  background-color: #ffc107;
+}
+
+.chart-bar::before {
+  content: "📊";
+  font-size: 60px;
+}
+
+.user-plus::before {
+  content: "👤";
+  font-size: 60px;
+}
+
+/* Untuk tampilan mobile */
+@media (max-width: 768px) {
+  .stat-card {
+    min-width: 100%;
+  }
+}
