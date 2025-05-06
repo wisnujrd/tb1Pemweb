@@ -903,57 +903,109 @@ footer {
   left: -15px;
 }
 
-@media (max-width: 768px) {
-  .profil-sekolah {
-    padding: 25px 20px;
-  }
-
-  .profil-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .profil-img img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .profil-sekolah h2 {
-    font-size: 1.8em;
-  }
-
-  .profil-desc h3 {
-    font-size: 1.3em;
-  }
+.footer {
+  background-color: #065f46;
+  color: #fff;
+  padding: 40px 0 0 0;
+  margin-top: 50px;
+  font-family: "Archivo Narrow", sans-serif;
 }
 
-@media (max-width: 480px) {
-  .profil-sekolah {
-    padding: 20px 15px;
-    margin: 20px 10px;
-  }
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
 
-  .profil-img img {
-    width: 100px;
-    height: 100px;
-  }
+.footer-section {
+  flex: 1;
+  margin-bottom: 30px;
+  min-width: 250px;
+  padding: 0 15px;
+}
 
-  .profil-sekolah h2 {
-    font-size: 1.5em;
-  }
+.footer-section h3 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
 
-  .profil-info p {
-    font-size: 1em;
-  }
+.footer-section h3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  background-color: #98fb98;
+}
 
-  .profil-desc h3 {
-    font-size: 1.2em;
-  }
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
 
-  .profil-desc p,
-  .profil-desc li {
-    font-size: 0.95em;
-  }
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #98fb98;
+  text-decoration: underline;
+}
+
+.footer-section.contact-info ul li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-section.contact-info ul li i {
+  margin-right: 10px;
+  color: #98fb98;
+  width: 20px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #98fb98;
+  color: #065f46;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
 }
