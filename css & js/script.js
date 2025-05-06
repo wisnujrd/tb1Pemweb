@@ -2,9 +2,13 @@ function loginUser() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  if (username === "Wisnu Jarodi" && password === "user123") {
-    localStorage.setItem("isLoggedIn", "true");
-    window.open("elearning.html", "_blank");
+  if (
+    (username === "Wisnu Jarodi" || username === "Bimo Arya") &&
+    password === "user123"
+  ) {
+    sessionStorage.setItem("isLoggedIn", "true");
+    sessionStorage.setItem("username", username);
+    window.location.href = "elearning.html";
   } else {
     alert("Username atau password salah!");
   }
@@ -12,7 +16,7 @@ function loginUser() {
 }
 
 function logoutUser() {
-  localStorage.removeItem("isLoggedIn");
+  sessionStorage.clear();
   window.location.href = "home.html";
 }
 
