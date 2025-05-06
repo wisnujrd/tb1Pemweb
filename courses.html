@@ -54,7 +54,7 @@
       </div>
       <div class="content">
         <div class="nav">
-          <span><i class="fa-solid fa-user"></i> Halo, Wisnu Jarodi</span>
+          <span id="welcome"><i class="fa-solid fa-user"></i></span>
           <a href="home.html" onclick="logoutUser()"
             ><span><i class="fas fa-sign-out-alt"></i> Logout</span></a
           >
@@ -102,8 +102,12 @@
     </div>
     <script src="css & js/script.js"></script>
     <script>
-      if (localStorage.getItem("isLoggedIn") !== "true") {
+      if (sessionStorage.getItem("isLoggedIn") !== "true") {
         window.location.href = "login.html";
+      } else {
+        const username = sessionStorage.getItem("username");
+        document.getElementById("welcome").innerHTML =
+          '<i class="fa-solid fa-user"></i> Halo, ' + username + "!";
       }
     </script>
   </body>
