@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 .nav {
   background-color: #bd48f6;
   height: 7rem;
@@ -121,13 +125,10 @@ body {
   overflow-x: scroll;
 }
 
-.horizontal-scroll::-webkit-scrollbar {
-  display: none;
-}
 .item {
   height: 530px;
   overflow: hidden;
-  flex: 0 0 auto; /* menjaga lebar item tetap sesuai isi */
+  flex: 0 0 auto;
 }
 
 .item img {
