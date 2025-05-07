@@ -103,6 +103,7 @@ body {
   padding: 20px;
 }
 
+/* Slider */
 .slider {
   display: flex;
   width: max-content;
@@ -227,6 +228,7 @@ body {
   border-bottom: 3px solid #98fb98;
 }
 
+/* Kalender Akademik */
 .tab-container {
   max-width: 800px;
   margin: 20px auto;
@@ -477,7 +479,7 @@ button:hover {
   text-decoration: underline;
 }
 
-
+/* Form Pendaftaran */
 .share-form {
   background: white;
   border-radius: 20px;
@@ -632,6 +634,7 @@ button:hover {
   box-shadow: 0 5px 15px rgba(130, 40, 178, 0.3);
 }
 
+/* File Upload Styling */
 input[type="file"] {
   padding: 15px;
   background: #f8f9fa;
@@ -646,7 +649,6 @@ input[type="file"]:hover {
   background: #f0f0f0;
 }
 
-
 .post {
   animation: fadeIn 0.5s ease-out;
 }
@@ -659,6 +661,7 @@ footer {
   margin-top: 2rem;
 }
 
+/* Custom Alert */
 .custom-alert {
   position: fixed;
   top: 0;
@@ -728,6 +731,7 @@ footer {
   box-shadow: 0 5px 15px rgba(130, 40, 178, 0.3);
 }
 
+/* PROFIL SEKOLAH STYLE */
 .profil-sekolah {
   background-color: #fff;
   border-radius: 15px;
