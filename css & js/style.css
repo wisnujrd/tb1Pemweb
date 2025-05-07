@@ -91,15 +91,6 @@
   letter-spacing: 0.5px;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 body {
   margin: 0;
   padding-top: 0;
@@ -174,8 +165,6 @@ body {
   background: rgba(0, 0, 0, 0.4);
 }
 
-<<<<<<< HEAD
-=======
 /* Sambutan Kepsek */
 .welcome-kepsek {
   background: url(https://smkn5tangerangkota.sch.id/uploads/news/WhatsApp_Image_2024-05-16_at_13.56.53_4Telb70KeG.jpg);
@@ -194,7 +183,6 @@ body {
   z-index: 1;
 }
 
->>>>>>> 39a737955e9c3a6b77b1cad528ea021a38d13a38
 .welcome-box {
   padding: 9rem 3rem;
   position: relative;
@@ -224,32 +212,6 @@ body {
 .box-text {
   color: white;
   font-size: 25px;
-}
-
-@media screen and (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .box-content {
-    flex-direction: column;
-  }
-
-  .sub-nav {
-    padding: 0 1rem;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 0.5rem;
-  }
-
-  .item-slides img {
-    width: 100vw;
-  }
-
-  .item-slides figcaption {
-    font-size: 24px;
-  }
 }
 
 .featured-posts {
@@ -449,12 +411,6 @@ button:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 480px) {
-  .elearning-container {
-    padding: 0 10px;
-  }
-}
-
 .news-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -521,16 +477,6 @@ button:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 480px) {
-  .news-item {
-    flex-direction: column;
-  }
-
-  .news-image {
-    flex: 0 0 200px;
-    width: 100%;
-  }
-}
 
 .share-form {
   background: white;
@@ -700,31 +646,6 @@ input[type="file"]:hover {
   background: #f0f0f0;
 }
 
-@media (max-width: 480px) {
-  .share-form {
-    margin: 20px;
-    padding: 25px;
-  }
-
-  .share-form h2 {
-    font-size: 1.8em;
-  }
-
-  .form-section {
-    padding: 20px;
-  }
-
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    padding: 12px;
-  }
-
-  .btn {
-    padding: 15px 25px;
-    font-size: 1.1em;
-  }
-}
 
 .post {
   animation: fadeIn 0.5s ease-out;
@@ -805,23 +726,6 @@ footer {
 .alert-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(130, 40, 178, 0.3);
-}
-
-@media (max-width: 480px) {
-  .alert-content {
-    padding: 20px;
-    width: 85%;
-  }
-
-  .alert-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-  }
-
-  .alert-content h3 {
-    font-size: 1.3em;
-  }
 }
 
 .profil-sekolah {
