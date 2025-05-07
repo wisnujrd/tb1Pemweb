@@ -31,6 +31,15 @@
   .item-slides figcaption {
     font-size: 24px;
   }
+
+  /* Forum Diskusi Responsif */
+  .forum-content {
+    grid-template-columns: 1fr;
+  }
+
+  .forum-container {
+    padding: 15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -67,6 +76,20 @@
   .btn {
     padding: 15px 25px;
     font-size: 1.1em;
+  }
+
+  .forum-header h2 {
+    font-size: 1.6em;
+  }
+
+  .comment-form,
+  .comment-item {
+    padding: 15px;
+  }
+
+  .comment-replies {
+    margin-left: 15px;
+    padding-left: 10px;
   }
 }
 
@@ -147,5 +170,23 @@
 
   .navbar {
     padding-top: 45px;
+  }
+
+  .forum-container {
+    margin: 20px auto;
+  }
+
+  .comment-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .comment-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .pagination a {
+    padding: 6px 10px;
   }
 }

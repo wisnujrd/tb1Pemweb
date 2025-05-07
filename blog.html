@@ -6,7 +6,7 @@
     <title>SMKN 5 Tangerang</title>
     <link rel="stylesheet" href="css & js/style.css" />
     <link rel="stylesheet" href="css & js/blog.css" />
-    <link rel="stylesheet" href="css & js/responsive.css">
+    <link rel="stylesheet" href="css & js/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -179,6 +179,138 @@
         </div>
       </div>
     </div>
+
+    <div class="forum-container">
+      <div class="forum-header">
+        <h2>Forum Diskusi</h2>
+        <p>Bagikan saran dan komentar Anda tentang SMKN 5 Tangerang</p>
+      </div>
+
+      <div class="forum-content">
+        <div class="comment-form">
+          <h3>Kirim Komentar</h3>
+          <form id="commentForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Nama Anda" required />
+            </div>
+            <div class="form-group">
+              <select id="category">
+                <option value="">Pilih Kategori</option>
+                <option value="saran">Saran</option>
+                <option value="komentar">Komentar</option>
+                <option value="pertanyaan">Pertanyaan</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="commentText"
+                placeholder="Tulis saran atau komentar Anda di sini..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn forum-btn">Kirim</button>
+          </form>
+        </div>
+
+        <div class="comments-section">
+          <h3>Komentar Terbaru</h3>
+          <div class="comment-list">
+            <div class="comment-item">
+              <div class="comment-header">
+                <span class="commenter-name">Ahmad Ridwan</span>
+                <span class="comment-category saran">Saran</span>
+                <span class="comment-date">10 Mei 2024</span>
+              </div>
+              <div class="comment-body">
+                <p>
+                  Saya harap perpustakaan sekolah dapat menyediakan lebih banyak
+                  buku teknologi terbaru untuk mendukung pembelajaran siswa
+                  jurusan TKJ dan RPL.
+                </p>
+              </div>
+              <div class="comment-actions">
+                <button class="like-btn">
+                  <i class="fas fa-thumbs-up"></i> 15
+                </button>
+                <button class="reply-btn">
+                  <i class="fas fa-reply"></i> Balas
+                </button>
+              </div>
+            </div>
+
+            <div class="comment-item">
+              <div class="comment-header">
+                <span class="commenter-name">Siti Nurhaliza</span>
+                <span class="comment-category komentar">Komentar</span>
+                <span class="comment-date">8 Mei 2024</span>
+              </div>
+              <div class="comment-body">
+                <p>
+                  Saya sangat mengapresiasi seminar karir yang diadakan sekolah
+                  bulan lalu. Sangat membantu saya dalam menentukan arah karir
+                  setelah lulus nanti.
+                </p>
+              </div>
+              <div class="comment-actions">
+                <button class="like-btn">
+                  <i class="fas fa-thumbs-up"></i> 23
+                </button>
+                <button class="reply-btn">
+                  <i class="fas fa-reply"></i> Balas
+                </button>
+              </div>
+            </div>
+
+            <div class="comment-item">
+              <div class="comment-header">
+                <span class="commenter-name">Budi Santoso</span>
+                <span class="comment-category pertanyaan">Pertanyaan</span>
+                <span class="comment-date">5 Mei 2024</span>
+              </div>
+              <div class="comment-body">
+                <p>
+                  Apakah sekolah berencana untuk mengadakan lomba karya ilmiah
+                  antar jurusan dalam waktu dekat? Saya dan teman-teman sangat
+                  tertarik untuk berpartisipasi.
+                </p>
+              </div>
+              <div class="comment-actions">
+                <button class="like-btn">
+                  <i class="fas fa-thumbs-up"></i> 8
+                </button>
+                <button class="reply-btn">
+                  <i class="fas fa-reply"></i> Balas
+                </button>
+              </div>
+              <div class="comment-replies">
+                <div class="reply-item">
+                  <div class="comment-header">
+                    <span class="commenter-name">Admin Sekolah</span>
+                    <span class="comment-date">6 Mei 2024</span>
+                  </div>
+                  <div class="comment-body">
+                    <p>
+                      Terima kasih atas pertanyaannya. Ya, kami sedang
+                      merencanakan lomba karya ilmiah antar jurusan yang akan
+                      diadakan pada bulan Juli mendatang. Informasi lebih lanjut
+                      akan diumumkan melalui website dan media sosial sekolah.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#"><i class="fas fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-section quick-links">
