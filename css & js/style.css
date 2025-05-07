@@ -91,15 +91,6 @@
   letter-spacing: 0.5px;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 body {
   margin: 0;
   padding-top: 0;
@@ -112,7 +103,6 @@ body {
   padding: 20px;
 }
 
-/* Slider */
 .slider {
   display: flex;
   width: max-content;
@@ -224,32 +214,6 @@ body {
   font-size: 25px;
 }
 
-@media screen and (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .box-content {
-    flex-direction: column;
-  }
-
-  .sub-nav {
-    padding: 0 1rem;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 0.5rem;
-  }
-
-  .item-slides img {
-    width: 100vw;
-  }
-
-  .item-slides figcaption {
-    font-size: 24px;
-  }
-}
-
 .featured-posts {
   margin-bottom: 40px;
 }
@@ -263,7 +227,6 @@ body {
   border-bottom: 3px solid #98fb98;
 }
 
-/* Kalender Akademik */
 .tab-container {
   max-width: 800px;
   margin: 20px auto;
@@ -448,13 +411,6 @@ button:hover {
   text-decoration: underline;
 }
 
-/* Responsive padding */
-@media (max-width: 480px) {
-  .elearning-container {
-    padding: 0 10px;
-  }
-}
-
 .news-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -521,18 +477,7 @@ button:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 480px) {
-  .news-item {
-    flex-direction: column;
-  }
 
-  .news-image {
-    flex: 0 0 200px;
-    width: 100%;
-  }
-}
-
-/* Form Pendaftaran */
 .share-form {
   background: white;
   border-radius: 20px;
@@ -687,7 +632,6 @@ button:hover {
   box-shadow: 0 5px 15px rgba(130, 40, 178, 0.3);
 }
 
-/* File Upload Styling */
 input[type="file"] {
   padding: 15px;
   background: #f8f9fa;
@@ -702,32 +646,6 @@ input[type="file"]:hover {
   background: #f0f0f0;
 }
 
-/* Responsive Design */
-@media (max-width: 480px) {
-  .share-form {
-    margin: 20px;
-    padding: 25px;
-  }
-
-  .share-form h2 {
-    font-size: 1.8em;
-  }
-
-  .form-section {
-    padding: 20px;
-  }
-
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    padding: 12px;
-  }
-
-  .btn {
-    padding: 15px 25px;
-    font-size: 1.1em;
-  }
-}
 
 .post {
   animation: fadeIn 0.5s ease-out;
@@ -741,7 +659,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* Custom Alert */
 .custom-alert {
   position: fixed;
   top: 0;
@@ -811,24 +728,6 @@ footer {
   box-shadow: 0 5px 15px rgba(130, 40, 178, 0.3);
 }
 
-@media (max-width: 480px) {
-  .alert-content {
-    padding: 20px;
-    width: 85%;
-  }
-
-  .alert-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-  }
-
-  .alert-content h3 {
-    font-size: 1.3em;
-  }
-}
-
-/* PROFIL SEKOLAH STYLE */
 .profil-sekolah {
   background-color: #fff;
   border-radius: 15px;
