@@ -206,3 +206,199 @@ nav a:hover {
 .search button {
   display: none;
 }
+
+.forum-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.forum-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #98fb98;
+}
+
+.forum-header h2 {
+  color: #065f46;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.forum-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.comment-form {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.comment-form h3 {
+  color: #2c3e50;
+  font-family: "Archivo Black", sans-serif;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.forum-btn {
+  background: linear-gradient(135deg, #98fb98, #065f46);
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.comments-section h3 {
+  color: #2c3e50;
+  font-family: "Archivo Black", sans-serif;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #98fb98;
+}
+
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment-item {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.commenter-name {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-right: 10px;
+}
+
+.comment-category {
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.comment-category.saran {
+  background-color: #4ecdc4;
+  color: white;
+}
+
+.comment-category.komentar {
+  background-color: #98fb98;
+  color: #065f46;
+}
+
+.comment-category.pertanyaan {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.comment-date {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.comment-body {
+  margin-bottom: 15px;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.like-btn,
+.reply-btn {
+  background: none;
+  border: none;
+  color: #2c3e50;
+  cursor: pointer;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.like-btn:hover,
+.reply-btn:hover {
+  color: #065f46;
+}
+
+.comment-replies {
+  margin-top: 15px;
+  margin-left: 30px;
+  padding-left: 15px;
+  border-left: 3px solid #98fb98;
+}
+
+.reply-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.pagination a.active,
+.pagination a:hover {
+  background-color: #065f46;
+  color: white;
+}
