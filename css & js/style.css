@@ -16,6 +16,7 @@
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav a {
@@ -46,14 +47,94 @@
   font-family: "Archivo Black" !important;
 }
 
-.menu {
+/* Hamburger icon styling */
+.hamburger-icon {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  align-self: center;
+  z-index: 10;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #202335;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+
+/* Hamburger animation when active */
+.hamburger-icon.active .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-icon.active .bar2 {
+  opacity: 0;
+}
+
+.hamburger-icon.active .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Menu styling for mobile view */
+.menu {
+  display: none;
+  position: absolute;
+  top: 7rem;
+  right: 0;
+  background-color: #98fb98;
+  width: 100%;
+  flex-direction: column;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+.menu.show {
+  display: flex;
 }
 
 .menu a {
-  margin-right: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive design */
+@media screen and (min-width: 992px) {
+  .hamburger-icon {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .menu a {
+    margin-right: 2rem;
+    padding: 0;
+  }
+
+  .menu a:hover {
+    background-color: transparent;
+  }
 }
 
 .sub-nav {
@@ -765,7 +846,8 @@ footer {
 
 .profil-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
   margin-bottom: 30px;
   flex-wrap: wrap;

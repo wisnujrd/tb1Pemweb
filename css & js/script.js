@@ -27,3 +27,16 @@ function goToElearning() {
     window.open("login.html", "_blank");
   }
 }
+
+function toggleMenu() {
+  var x = document.getElementById("myLinks");
+  var hamburger = document.querySelector(".hamburger-icon");
+
+  if (x.classList.contains("show")) {
+    x.classList.remove("show");
+    hamburger.classList.remove("active");
+  } else {
+    x.classList.add("show");
+    hamburger.classList.add("active");
+  }
+}
