@@ -30,12 +30,15 @@
           <a href="#">TANGERANG</a>
         </div>
       </div>
-      <div class="menu">
+      <div class="menu" id="myLinks">
         <a href="home.html">Beranda</a>
         <a href="profil.html">Profil</a>
         <a href="berita.html">Berita</a>
         <a href="galeri.html">Galeri</a>
       </div>
+      <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <div class="sub-nav">
@@ -209,7 +212,18 @@
       </div>
     </footer>
 
+    <script>
+      function hamburgerFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
     <script src="css & js/script.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
