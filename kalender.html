@@ -57,19 +57,26 @@
         </div>
 
         <div class="tab-content active" id="ganjil">
-          <h3>Kalender Akademik Sarjana & Diploma</h3>
-          <p>6 Mei – 26 Agustus 2024 (Ganjil)</p>
-          <p>17 Oktober 2024 – 17 Februari 2025 (Genap)</p>
+          <center>
+            <img
+              src="https://i.ibb.co.com/SDcT9WKT/kiwkiw.jpg"
+              alt="Semester_ganjil"
+            />
+          </center>
         </div>
 
         <div class="tab-content" id="genap">
-          <h3>Kalender Akademik Doktor</h3>
-          <p>10 Juli – 10 Oktober 2024 (Ganjil)</p>
-          <p>5 November 2024 – 5 Maret 2025 (Genap)</p>
+          <center>
+            <img
+              src="https://i.ibb.co.com/7dvPdsqX/wikwik.jpg"
+              alt="Semester_genap"
+            />
+          </center>
         </div>
       </div>
     </div>
 
+<<<<<<< HEAD
     <script>
       const tabButtons = document.querySelectorAll(".tab-btn");
       const tabContents = document.querySelectorAll(".tab-content");
@@ -84,6 +91,8 @@
         });
       });
     </script>
+=======
+>>>>>>> 39a737955e9c3a6b77b1cad528ea021a38d13a38
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-section quick-links">
@@ -133,6 +142,23 @@
         <p>&copy; 2024 SMK Negeri 5 Tangerang. Hak Cipta Dilindungi.</p>
       </div>
     </footer>
+
+    <script>
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // reset semua tombol dan konten
+          tabButtons.forEach((btn) => btn.classList.remove("active"));
+          tabContents.forEach((content) => content.classList.remove("active"));
+
+          // aktifkan yang diklik
+          button.classList.add("active");
+          document.getElementById(button.dataset.tab).classList.add("active");
+        });
+      });
+    </script>
 
     <script src="css & js/script.js"></script>
     <link
